@@ -7,7 +7,6 @@ public class DeliveryStaffDetails {
     private String name , username, password, email, id, phonNo;
     private static ArrayList <DeliveryStaffDetails> Stafflist = new  ArrayList <>();
 
-
     public String getName() {
         return name;
     }
