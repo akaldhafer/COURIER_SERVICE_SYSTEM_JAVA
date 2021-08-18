@@ -12,7 +12,6 @@ import java.io.PrintWriter;
 import javax.swing.JOptionPane;
 
 public class AdminManagement {
-    
    
     // Add a new staff to the file 
     public void AddStaff(String name, String id, String username, String Password, String emailAddress,String phone) throws IOException {
