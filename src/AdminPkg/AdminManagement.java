@@ -39,7 +39,6 @@ public class AdminManagement {
         DeliveryStaffDetails.getStafflist().get(in).setPassword(password);
         DeliveryStaffDetails.getStafflist().get(in).setEmail(email);
         DeliveryStaffDetails.getStafflist().get(in).setPhonNO(phone);
-
         PrintWriter update = new PrintWriter("DeliveryStaffRecords.txt");
         for (int i = 0; i < DeliveryStaffDetails.getStafflist().size(); i++) {
             update.println(DeliveryStaffDetails.getStafflist().get(i).getName() + ":"
