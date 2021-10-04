@@ -47,9 +47,9 @@ public class AdminManagement {
                     + DeliveryStaffDetails.getStafflist().get(i).getPassword() + ":"
                     + DeliveryStaffDetails.getStafflist().get(i).getEmail() + ":"
                     + DeliveryStaffDetails.getStafflist().get(i).getPhonNO());
-            update.flush();
-            update.close();
         }
+        update.flush();
+        update.close();
         DeliveryStaffDetails.getStafflist().clear();
         MainMethod refresh = new MainMethod();
         refresh.run();
@@ -67,6 +67,7 @@ public class AdminManagement {
                         + DeliveryStaffDetails.getStafflist().get(i).getPhonNO());
             }
             update.flush();
+            update.close();
         }
         JOptionPane.showMessageDialog(null, "Staff Record Deleted", "Successful Message", JOptionPane.INFORMATION_MESSAGE);
     }
